@@ -21,6 +21,7 @@ const readAndConvertFile = file =>
           locationAddress: placeVisit?.location?.address,
           locationName: placeVisit?.location?.address,
           locationConfidence: placeVisit?.location?.locationConfidence,
+          time: placeVisit?.duration?.startTimestampMs && new Date(parseInt(placeVisit.duration.startTimestampMs)).toDateString(),
           durationMs:
             parseInt(placeVisit?.duration?.endTimestampMs ?? 0) -
             parseInt(placeVisit?.duration?.startTimestampMs ?? 0),
