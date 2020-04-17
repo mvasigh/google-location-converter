@@ -83,7 +83,7 @@ const IndexPage = () => {
   return (
     <div className="container">
       <SEO title="Home" />
-      <h1>Google Location History Converter</h1>
+      <h1>Location Data Converter for Google</h1>
       <p>Convert your Google location history from JSON to a CSV spreadsheet</p>
       <form onSubmit={handleFormSubmit} className="form">
         <div className="file-picker" {...getRootProps()}>
