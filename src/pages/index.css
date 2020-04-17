@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  background: rgb(206, 206, 206);
+  color: #212121;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.file-picker {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  background: teal;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+li {
+  list-style-type: none;
+}
+
+button:disabled {
+  opacity: 0.6;
+  background: grey;
+}
+
+.error {
+  color: red;
+}
